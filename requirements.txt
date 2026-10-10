@@ -1,0 +1,7 @@
+
+qiskit
+scikit-learn
+pandas
+numpy
+matplotlib
+pylatexenc
