@@ -8,10 +8,10 @@ version = "2.0.0"
 description = "Quantum-Classical Cyber Anomaly Detection"
 requires-python = ">=3.11"
 dependencies = [
-    "qiskit>=2.5",
-    "scikit-learn>=1.9",
-    "pandas>=3.0",
-    "numpy>=2.5",
+    "qiskit>=2.3",
+    "scikit-learn>=1.7",
+    "pandas>=2.3",
+    "numpy>=2.2",
     "matplotlib>=3.11",
     "fastapi>=0.115",
     "uvicorn[standard]>=0.32",

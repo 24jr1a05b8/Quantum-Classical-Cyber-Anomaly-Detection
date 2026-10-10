@@ -10,10 +10,16 @@ __pycache__/
 dist/
 build/
 .eggs/
+
+# Virtual environments - ALL of them
 .venv/
+.venv-*/
 venv/
+venv-*/
 env/
 .env
+env.bak/
+venv.bak/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -23,7 +29,7 @@ env/
 .dmypy.json
 .pyre/
 
-# Pytest
+# Pytest / coverage
 .pytest_cache/
 .cache/
 htmlcov/
@@ -40,6 +46,7 @@ frontend/.env.*.local
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # IDEs
 .vscode/
