@@ -1,0 +1,149 @@
+{
+  "version": "v2",
+  "created_at": "2026-10-10T05:59:34.885567Z",
+  "git_commit": "6ed6fa2",
+  "quick": true,
+  "config": {
+    "n_train": 300,
+    "n_val": 1000,
+    "entanglement": "linear",
+    "reps": 2,
+    "gamma_grid": {
+      "classical": [
+        0.05,
+        0.1,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "quantum": [
+        0.05,
+        0.1,
+        0.25,
+        0.5
+      ]
+    },
+    "target_fprs": [
+      0.01,
+      0.05
+    ]
+  },
+  "library_versions": {
+    "qiskit": "2.5.2",
+    "sklearn": "1.9.1"
+  },
+  "data_files": {
+    "mon": {
+      "name": "Monday-WorkingHours.pcap_ISCX.csv",
+      "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34"
+    },
+    "wed": {
+      "name": "Wednesday-workingHours.pcap_ISCX.csv",
+      "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a"
+    },
+    "fri": {
+      "name": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b"
+    }
+  },
+  "metrics": {
+    "classical_k4": {
+      "prauc": 0.50831295575215,
+      "rocauc": 0.9320130941752564,
+      "gamma": 1.0,
+      "k": 4,
+      "model": "classical",
+      "n_train": 300
+    },
+    "quantum_k4": {
+      "prauc": 0.5965121065270883,
+      "rocauc": 0.9152936720504288,
+      "gamma": 0.25,
+      "k": 4,
+      "model": "quantum",
+      "n_train": 300
+    },
+    "classical_k6": {
+      "prauc": 0.5382788325748026,
+      "rocauc": 0.9445932418905392,
+      "gamma": 2.0,
+      "k": 6,
+      "model": "classical",
+      "n_train": 300
+    },
+    "quantum_k6": {
+      "prauc": 0.5262379433417065,
+      "rocauc": 0.945945945945946,
+      "gamma": 0.25,
+      "k": 6,
+      "model": "quantum",
+      "n_train": 300
+    }
+  },
+  "thresholds": {
+    "classical_k4": {
+      "0.01": {
+        "threshold": 0.31939760735527184,
+        "recall": 0.0990990990990991,
+        "measured_fpr": 0.018018018018018018,
+        "f1": 0.15714285714285714
+      },
+      "0.05": {
+        "threshold": 0.05026930019928845,
+        "recall": 0.6756756756756757,
+        "measured_fpr": 0.04804804804804805,
+        "f1": 0.6410256410256411
+      }
+    },
+    "quantum_k4": {
+      "0.01": {
+        "threshold": 0.2912171466711888,
+        "recall": 0.17117117117117117,
+        "measured_fpr": 0.008008008008008008,
+        "f1": 0.2753623188405797
+      },
+      "0.05": {
+        "threshold": 0.05363410992377961,
+        "recall": 0.6216216216216216,
+        "measured_fpr": 0.05305305305305305,
+        "f1": 0.592274678111588
+      }
+    },
+    "classical_k6": {
+      "0.01": {
+        "threshold": 0.33476546193838796,
+        "recall": 0.1981981981981982,
+        "measured_fpr": 0.014014014014014014,
+        "f1": 0.29931972789115646
+      },
+      "0.05": {
+        "threshold": 0.1358450989228769,
+        "recall": 0.7747747747747747,
+        "measured_fpr": 0.07407407407407407,
+        "f1": 0.6346863468634686
+      }
+    },
+    "quantum_k6": {
+      "0.01": {
+        "threshold": 0.30604724036103714,
+        "recall": 0.14414414414414414,
+        "measured_fpr": 0.01901901901901902,
+        "f1": 0.2191780821917808
+      },
+      "0.05": {
+        "threshold": 0.13058593787395448,
+        "recall": 0.6036036036036037,
+        "measured_fpr": 0.05205205205205205,
+        "f1": 0.582608695652174
+      }
+    }
+  },
+  "artifacts": [
+    "preprocessor_k4.pkl",
+    "classical_k4.pkl",
+    "quantum_k4.pkl",
+    "preprocessor_k6.pkl",
+    "classical_k6.pkl",
+    "quantum_k6.pkl"
+  ]
+}

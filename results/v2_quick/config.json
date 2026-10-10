@@ -1,0 +1,35 @@
+{
+  "quick": true,
+  "run_id": "v2_quick",
+  "seeds": [
+    0
+  ],
+  "ks": [
+    4,
+    6
+  ],
+  "n_train": 300,
+  "n_val": 1000,
+  "per_test": 20,
+  "per_tune": 8,
+  "entanglement": "linear",
+  "gamma_grid": {
+    "classical": [
+      0.05,
+      0.1,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "quantum": [
+      0.05,
+      0.1,
+      0.25,
+      0.5
+    ]
+  },
+  "target_fprs": [
+    0.01,
+    0.05
+  ]
+}

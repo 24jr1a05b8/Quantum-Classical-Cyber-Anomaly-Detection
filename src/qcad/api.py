@@ -54,11 +54,6 @@ async def lifespan(app: FastAPI):
         format="%(asctime)s %(levelname)s %(name)s %(message)s",
     )
     _load_artifacts()
-    # Serve pre-built frontend if present.
-    frontend_dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
-    if frontend_dist.exists():
-        app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="static")
-        logger.info("Serving frontend from %s", frontend_dist)
     yield
 
 
@@ -73,6 +68,12 @@ app = FastAPI(
     version="2.0.0",
     lifespan=lifespan,
 )
+
+# Mount pre-built frontend at module level (safe — happens before first request).
+_frontend_dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+if _frontend_dist.exists():
+    app.mount("/app", StaticFiles(directory=str(_frontend_dist), html=True), name="static")
+    logger.info("Serving frontend from %s", _frontend_dist)
 
 # ── CORS ──────────────────────────────────────────────────────────────────────
 
