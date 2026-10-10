@@ -42,8 +42,8 @@ Both models share an **identical preprocessing pipeline** — the only differenc
 
 | Name | Role |
 |------|------|
-| *P.Faysal Khan* | 🤖 ML Engineer |
-| *U.Gopi* | ⚛️ Quantum Developer |
+| *P.Faysal Khan* | ⚛️ Quantum Developer |
+| *U.Gopi* | 🤖 ML Engineer |
 | *U.Bharath Kowshik* | 🔧 Backend / API |
 | *N.Dayakar* | 🎨 Frontend / UI |
 
