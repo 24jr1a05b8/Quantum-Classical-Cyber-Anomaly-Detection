@@ -42,9 +42,10 @@ Both models share an **identical preprocessing pipeline** — the only differenc
 
 | Name | Role |
 |------|------|
-| *[Your Name]* | 🤖 ML Engineer / Quantum Developer |
-| *[Team Member 2]* | 🔧 Backend / API |
-| *[Team Member 3]* | 🎨 Frontend / UI |
+| *P.Faysal Khan* | 🤖 ML Engineer |
+| *U.Gopi* | ⚛️ Quantum Developer |
+| *U.Bharath Kowshik* | 🔧 Backend / API |
+| *N.Dayakar* | 🎨 Frontend / UI |
 
 ---
 
